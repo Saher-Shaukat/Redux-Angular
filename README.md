@@ -123,3 +123,11 @@ export class AppModule {
 
 The configureStore method takes two parameter. As the first parameter we’re passing in our reducer function rootReducer. The second parameter is an object containing the initial state of the store. In our case we’ve defined INITIAL_STATE already so that we can pass in that object here.
 
+```
+NgRedux and select is imported from the @angular-redux/store package.
+
+```
+Furthermore we need to access the state properties todos and lastUpdate. To define class properties which gives you access to the store properties we need to use the *@select* decorator.
+
+ Dispatching is done by using the dispatch method of the NgRedux service.
+
