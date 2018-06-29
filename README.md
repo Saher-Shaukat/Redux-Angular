@@ -1,32 +1,21 @@
-<<<<<<< HEAD
-# AngularRedux
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.8.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-=======
 # Redux-Angular
 Implemented Redux in Angular
->>>>>>> a5ec65381a1e5a2880e4ae5e23983d5d30abff71
+
+Redux is a predictable state container for JavaScript apps which makes it possible to use a centralized state management in your application. A centralized state is just data you’re using by more than one component (application level state).
+
+To initiate a new Angular 4 project we can use Angular CLI:
+
+$ ng new angularedux-todo
+
+# Installation Redux for Angular
+
+$ npm install redux @angular-redux/store --save
+
+# Implementing Store, Actions and Reducer
+
+Store:
+
+Here you can see that two properties are defined:
+
+1) todos: as an array of type ITodo to contain all of our todo items
+2) lastUpdate: as Date type to contain the information when the todos array has been updated
